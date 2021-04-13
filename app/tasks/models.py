@@ -9,14 +9,14 @@ logger = logging.getLogger(__name__)
 
 class Tasks(models.Model):
     class TaskStatusChoices(models.TextChoices):
-        SCHEDULED = 'SC', 'Scheduled'
-        RUNNING = 'R', 'Running'
-        COMPLETED = 'C', 'Completed'
-        IDLE = 'I', 'Idle'
-        MULTI_RUN = 'M', 'Multi-Run'
+        SCHEDULED = "SC", "Scheduled"
+        RUNNING = "R", "Running"
+        COMPLETED = "C", "Completed"
+        IDLE = "I", "Idle"
+        MULTI_RUN = "M", "Multi-Run"
 
     class Meta:
-        verbose_name_plural = 'Tasks'
+        verbose_name_plural = "Tasks"
 
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=250)
@@ -73,7 +73,11 @@ class Tasks(models.Model):
                 return self.TaskStatusChoices.RUNNING.label
             if self.is_multi_run:
                 return self.TaskStatusChoices.MULTI_RUN.label
-            if self.completed_subtasks and self.scheduled_subtasks and not self.running_subtasks:
+            if (
+                self.completed_subtasks
+                and self.scheduled_subtasks
+                and not self.running_subtasks
+            ):
                 return self.TaskStatusChoices.IDLE.label
             else:
                 return self.TaskStatusChoices.COMPLETED.label

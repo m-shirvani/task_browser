@@ -8,6 +8,6 @@ def test_app():
 
 
 def test_home(client):
-    response = client.get('')
+    response = client.get("")
     assert response.status_code == 200
-    assert 'home.html' in response.template_name
+    assert "home.html" in response.template_name
