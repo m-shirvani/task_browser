@@ -111,7 +111,7 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-tables2"
-version = "2.3.4"
+version = "2.4.0"
 description = "Table/data-grid framework for Django"
 category = "main"
 optional = false
@@ -308,7 +308,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c90e1b872a66172f95790434c1dcc38fa722be10b70b011d38355679b28331b8"
+content-hash = "9ee72f30b13fc5d1e482c3cfe518da1441697759731f6198613bbd8c505ea707"
 
 [metadata.files]
 appdirs = [
@@ -348,8 +348,8 @@ django = [
     {file = "Django-3.2.tar.gz", hash = "sha256:21f0f9643722675976004eb683c55d33c05486f94506672df3d6a141546f389d"},
 ]
 django-tables2 = [
-    {file = "django-tables2-2.3.4.tar.gz", hash = "sha256:50ccadbd13740a996d8a4d4f144ef80134745cd0b5ec278061537e341f5ef7a2"},
-    {file = "django_tables2-2.3.4-py2.py3-none-any.whl", hash = "sha256:af5f70a9845fd8690c6b44120b065e55b9771cae99c1dcd0eb4f1cfa3f0a71e4"},
+    {file = "django-tables2-2.4.0.tar.gz", hash = "sha256:4eb526464ee56a0b7d827d1da9a4f257e44edb5e1cbb6a0cfb6ca0fed70d8e4f"},
+    {file = "django_tables2-2.4.0-py2.py3-none-any.whl", hash = "sha256:0f10ecef25708385a9d32d68d7c9478ca8dda31569410cb05a025be3f2c57593"},
 ]
 graphql-core = [
     {file = "graphql-core-3.1.4.tar.gz", hash = "sha256:972eff18416ad90815c95914b754486270f13fbe1a24e010c7eedbaa903b9386"},

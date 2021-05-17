@@ -10,7 +10,7 @@ Django = "^3.2"
 pytest-django = "^4.2.0"
 gunicorn = "^20.1.0"
 whitenoise = "^5.2.0"
-django-tables2 = "^2.3.4"
+django-tables2 = "^2.4.0"
 ariadne = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
